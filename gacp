@@ -1,5 +1,5 @@
 #!/bin/bash
-# SPDX-FileCopyrightText: 2gacp026 kageyama yakumo
+# SPDX-FileCopyrightText: 2026 kageyama yakumo
 # SPDX-License-Identifier: BSD-3-Clause
 
 msg="$1"
