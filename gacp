@@ -1,0 +1,19 @@
+#!/bin/bash
+# SPDX-FileCopyrightText: 2gacp026 kageyama yakumo
+# SPDX-License-Identifier: BSD-3-Clause
+
+msg="$1"
+[ -z "$msg" ] && { echo "gacp: commit message required" >&2; exit 1; }
+
+files=()
+while IFS= read -r f; do
+  [ -z "$f" ] && continue
+  [ -e "$f" ] || { echo "gacp: no such file: $f" >&2; exit 1; }
+  files+=("$f")
+done
+[ ${#files[@]} -eq 0 ] && { echo "gacp: no files on stdin" >&2; exit 1; }
+
+git add -- "${files[@]}" || exit 1
+git commit -q -m "$msg"  || exit 1
+git push -q              || exit 1
+git log -1 --format='%h %s'gacp
