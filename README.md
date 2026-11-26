@@ -1,5 +1,5 @@
 # gacp
-![test](https://github.com/あなたのID/gacp/actions/workflows/test.yml/badge.svg)
+![test](https://github.com/kageyama-sha3/gacp/actions/workflows/test.yml/badge.svg)
 
 標準入力から受け取ったファイルを、`git add` → `git commit` → `git push` まで一度に行うコマンドです。
 
@@ -15,7 +15,7 @@ $ ls *.py | ./gacp "Pythonファイルを更新"
 ```
 
 ## 入出力
-- 引数：コミットメッセージ（必須）
+- コミットメッセージ（必須）
 - 標準入力：コミットするファイル名（1行に1つ、空行は無視）
 - 標準出力：作成したコミットの短いハッシュとメッセージ
 - 次の場合は標準エラー出力にメッセージを出し、終了ステータス1で終了します
@@ -27,7 +27,7 @@ $ ls *.py | ./gacp "Pythonファイルを更新"
 
 ## インストール
 ```
-$ git clone https://github.com/あなたのID/gacp.git
+$ git clone https://github.com/kageyama-sha3/gacp.git
 $ cd gacp
 ```
 どこからでも使いたい場合は、`gacp`をPATHの通ったディレクトリ（例：`~/bin`）にコピーしてください。
