@@ -1,5 +1,5 @@
 #!/bin/bash
-# SPDX-FileCopyrightText: 2026 あなたの名前
+# SPDX-FileCopyrightText: 2026 kageyama yakumo
 # SPDX-License-Identifier: BSD-3-Clause
 
 ng () { echo ${1}行目のテスト失敗; res=1; }
