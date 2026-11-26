@@ -6,7 +6,7 @@
 ## 使い方
 ```
 $ echo README.md | ./gacp "READMEを修正"
-a1b2c3d READMEを修正
+0fc27d3 READMEのURLと誤記を修正
 ```
 パイプで、コミットしたいファイルを選べます。
 ```
